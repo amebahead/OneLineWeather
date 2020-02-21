@@ -1,0 +1,15 @@
+
+target 'OneLineWeatherEx' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+    # Add test target
+    target 'OneLineWeatherExTests' do
+      inherit! :search_paths
+    end
+
+    pod 'Alamofire', '~> 4.8.0'
+    pod 'SWXMLHash', '~> 5.0.0'
+    pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
+  
+end
